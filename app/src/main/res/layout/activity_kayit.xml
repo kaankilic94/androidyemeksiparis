@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.emre.yemek.UrunDetay">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="31dp"
+        android:text="Kayıt Ol"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Adınız"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtSoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtAd"
+        android:layout_below="@+id/txtAd"
+        android:ems="10"
+        android:hint="Soyadınız"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtSoyad"
+        android:layout_below="@+id/txtSoyad"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Telefon Numaranız"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtTel"
+        android:layout_below="@+id/txtTel"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Email Adresiniz"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtMail"
+        android:layout_below="@+id/txtMail"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Parolanız"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnKayit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtPass"
+        android:layout_below="@+id/txtPass"
+        android:layout_marginTop="29dp"
+        android:text="Kayıt" />
+</RelativeLayout>

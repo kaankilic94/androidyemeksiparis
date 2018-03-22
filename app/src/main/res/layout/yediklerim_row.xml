@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtYYTarih"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgYResim"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/txtYeTarih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgYResim"
+        android:textAlignment="textStart"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/txtYUrun"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtYeTarih"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/imgYResim"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgYResim"
+        android:layout_toEndOf="@+id/imgYResim"
+        android:text="Adet:" />
+
+    <TextView
+        android:id="@+id/txtYAdet"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgYResim"
+        android:layout_toEndOf="@+id/textView8"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtYAdet"
+        android:layout_alignBottom="@+id/txtYAdet"
+        android:layout_toEndOf="@+id/txtYAdet"
+        android:text="Fiyat:" />
+
+    <TextView
+        android:id="@+id/txtYFiyat"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10"
+        android:textAlignment="textStart" />
+</RelativeLayout>
